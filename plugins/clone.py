@@ -43,7 +43,7 @@ async def clone_menu(client, message):
         await db.add_clone_bot(bot.id, user_id, bot_token)
         await msg.edit_text(f"<b>sᴜᴄᴄᴇssғᴜʟʟʏ ᴄʟᴏɴᴇᴅ ʏᴏᴜʀ ʙᴏᴛ: @{bot.username}.\n\nʏᴏᴜ ᴄᴀɴ ᴄᴜsᴛᴏᴍɪsᴇ ʏᴏᴜʀ ᴄʟᴏɴᴇ ʙᴏᴛ ʙʏ /settings ᴄᴏᴍᴍᴀɴᴅ ɪɴ ʏᴏᴜʀ ᴄʟᴏɴᴇ ʙᴏᴛ</b>")
     except BaseException as e:
-        await msg.edit_text(f"⚠️ <b>Bot Error:</b>\n\n<code>{e}</code>\n\n**Kindly forward this message to @KingVJ01 to get assistance.**")
+        await msg.edit_text(f"⚠️ <b>Bot Error:</b>\n\n<code>{e}</code>\n\n**Kindly forward this message to @ftmdeveloper to get assistance.**")
 
 @Client.on_message(filters.command('deleteclone'))
 async def delete_clone_menu(client, message):
@@ -67,4 +67,3 @@ async def restart_bots():
             await vj.start()
         except Exception as e:
             print(f"Error while restarting bot with token {bot_token}: {e}")
-        
