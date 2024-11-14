@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'FTMBOTZ')
 API_ID = int(environ.get('API_ID', '22141398'))
 API_HASH = environ.get('API_HASH', '0c8f8bd171e05e42d6f6e5a6f4305389')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7539690404:AAElN-")
+BOT_TOKEN = environ.get('BOT_TOKEN', "8034842897:AAHxrjsxzMudiG54OPTHds6oVHh3fvPDqws")
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 1800))
 PICS = (environ.get('PICS', 'https://envs.sh/LRP.jpg')).split() #SAMPLE PIC
